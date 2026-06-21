@@ -17,6 +17,18 @@ static_library("template") {
         
         "//vendor/pzkj/pz_hi3861/common/bsp/src/bsp_led.c",
         "//vendor/pzkj/pz_hi3861/common/bsp/src/bsp_ds18b20.c",
+        "//vendor/pzkj/pz_hi3861/common/bsp/src/bsp_mqtt.c",
+
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTConnectClient.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTConnectServer.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTDeserializePublish.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTFormat.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTPacket.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTSerializePublish.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTSubscribeClient.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTSubscribeServer.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTUnsubscribeServer.c",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src/MQTTUnsubscribeClient.c",
     ]
 
     include_dirs = [
@@ -35,7 +47,9 @@ static_library("template") {
         "//kernel/liteos_m/kal/cmsis",
         "//base/iot_hardware/peripheral/interfaces/kits",
         "//foundation/communication/wifi_lite/interfaces/wifiservice",
-        "//vendor/hqyj/fs_hi3861/common/bsp/include"
+        "//vendor/hqyj/fs_hi3861/common/bsp/include",
+        "//third_party/paho.mqtt.embedded-c/MQTTPacket/src",
+        "//third_party/cJSON",
 
     ]
 
